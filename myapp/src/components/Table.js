@@ -1,5 +1,6 @@
 import React from "react";
 
+
 const Table = ({ students, selectStudent }) => {
     return (
         <table border="1" style={{ width: "100%" }}>

@@ -6,7 +6,7 @@ const Profile = ({ student }) => {
             <h2>Profile</h2>
             <img
                 className="profile"
-                src={require(`../assets/profilepic/${student.profilePic}`).default}
+                src={`./assets/profilepic/${student.profilePic}`}
                 alt="Profile"
                 style={{ width: "150px", height: "150px", borderRadius: "50%" }}
             />

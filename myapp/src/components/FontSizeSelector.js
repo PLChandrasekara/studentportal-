@@ -2,11 +2,12 @@ import React from "react";
 
 const FontSizeSelector = ({ fontSize, setFontSize }) => {
     return (
-        <div>
-            <h3>FontSize</h3>
-            <button onClick={() => setFontSize("16px")}>Small</button>
-            <button onClick={() => setFontSize("20px")}>Medium</button>
-            <button onClick={() => setFontSize("24px")}>Large</button>
+        <div className="fontsize">
+            <p>FontSize 
+            <button onClick={() => setFontSize("16px")}>S</button>
+            <button onClick={() => setFontSize("20px")}>M</button>
+                <button onClick={() => setFontSize("24px")}>L</button>
+            </p>
         </div>
     )
 }
