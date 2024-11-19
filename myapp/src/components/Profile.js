@@ -2,21 +2,22 @@ import React from "react";
 
 const Profile = ({ student }) => {
     return (
-        <div>
-            <h2>Profile</h2>
+        <div className="profilecard">
             <img
                 className="profile"
-                src={`./assets/profilepic/${student.profilePic}`}
+                src={`/assets/profilepic/${student.profilePic}`}
                 alt="Profile"
-                style={{ width: "150px", height: "150px", borderRadius: "50%" }}
             />
-            <h3>{`${student.firstName} ${student.lastName}`}</h3>
-            <p><b>Age:</b> {student.age}</p>
-            <p><b>Gender:</b> {student.gender}</p>
-            <p><b>Course:</b> {student.course}</p>
-            <p><b>Country:</b> {student.address.country}</p>
-            <p><b>City:</b> {student.address.city}</p>
-            <p><b>Skills:</b> {student.skills.join(", ")}</p>
+            <div className="prodetails">
+                <p className="details">ID: {student.studentId}</p>
+                <p className="details">Full Name: {`${student.firstName} ${student.lastName}`}</p>
+                <p className="details">Age: {student.age}</p>
+                <p className="details">Gender: {student.gender}</p>
+                <p className="details">Course: {student.course}</p>
+                <p className="details">Country: {student.address.country}</p>
+                <p className="details">City: {student.address.city}</p>
+                <p className="details">Skills: {student.skills.join(", ")}</p>
+            </div>
         </div>
     );
 };
